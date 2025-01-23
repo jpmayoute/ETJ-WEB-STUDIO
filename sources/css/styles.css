@@ -1,0 +1,12 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/sources/pictures/DALL·E\ 2025-01-23\ 09.14.50\ -\ A\ clean\ and\ bright\ background\ image\ directly\ inspired\ by\ a\ web\ studio\ theme\,\ designed\ for\ text\ or\ code\ overlay.\ The\ design\ includes\ a\ light\ gradient\ b.webp) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
