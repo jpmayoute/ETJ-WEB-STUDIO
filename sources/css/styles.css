@@ -13,32 +13,68 @@ h1, h2, h3 {
 }
 
 /* Navbar */
+/* Navbar Styling */
 .navbar {
-    background-color: #0d6efd; /* Primary Bootstrap color */
-    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff; /* Fond blanc élégant */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre discrète */
 }
 
-.navbar .navbar-brand {
-    font-size: 1.5rem;
-    color: #fff;
+.navbar-brand {
+    font-size: 1.75rem;
     font-weight: bold;
-}
-
-.navbar .nav-link {
-    color: #fff;
-    margin-left: 1rem;
-    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-    color: #ffc107; /* Accent color for hover */
+.navbar-brand:hover {
+    color: #0056b3; /* Bleu foncé au survol */
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Bleu vif au survol */
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Ligne animée au survol */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 60%; /* Animation de la ligne sous le lien */
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 
 /* Hero Section */
 header {
-    background: url('../pictures/hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: url(../pictures/DALL·E\ 2025-01-23\ 22.16.11\ -\ A\ sleek\ and\ modern\ eco-friendly\ website\ hero\ background\,\ featuring\ abstract\ blue\ gradients\ with\ soft\ white\ overlays\ and\ subtle\ technology-inspired\ geo.webp) no-repeat center center/cover;
+    color: #0b0b0b;
     text-align: center;
     padding: 4rem 1rem;
 }
@@ -61,8 +97,12 @@ header p {
 
 /* Services Section */
 #services {
-    background-color: #fff;
-    padding: 4rem 1rem;
+    background-image: url('../pictures/A_clean_and_modern_background_image_for_a_Services.png'); /* Mettez le chemin correct ici */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #050505; /* Ajustez la couleur du texte pour la lisibilité */
+    padding: 5rem 0;
 }
 
 #services h2 {
@@ -112,46 +152,72 @@ header p {
     color: #fff;
 }
 
-/* About Section */
+/* À propos Section */
 #about {
-    background-color: #f9f9f9;
-    padding: 4rem 1rem;
+    background-color: #f8f9fa;
+    padding: 50px 0;
 }
 
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#about .container {
+    text-align: center;
+    padding: 20px;
 }
 
 #about p {
-    font-size: 1rem;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
 }
+
 
 /* Contact Section */
 #contact {
-    padding: 4rem 1rem;
+    background-color: #f8f9fa;
 }
 
 #contact h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #343a40;
 }
 
 #contact .form-label {
     font-weight: bold;
+    color: #495057;
 }
 
-#contact .btn-primary {
-    background-color: #0d6efd;
+#contact .form-control {
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
     transition: background-color 0.3s ease;
 }
 
-#contact .btn-primary:hover {
-    background-color: #084298;
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+#contact .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact .bi {
+    margin-right: 0.5rem;
 }
 
 /* Footer */
