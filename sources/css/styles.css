@@ -12,58 +12,38 @@ h1, h2, h3 {
     color: #222;
 }
 
-/* Navbar */
 /* Navbar Styling */
 .navbar {
-    transition: all 0.3s ease-in-out;
     background-color: #ffffff; /* Fond blanc élégant */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0; /* Plus d'espace vertical */
 }
 
-.navbar-brand {
-    font-size: 1.75rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.navbar-brand:hover {
-    color: #0056b3; /* Bleu foncé au survol */
-    text-decoration: none;
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espacement horizontal entre les items */
 }
 
 .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.25rem; /* Taille plus grande pour les liens */
+    font-weight: 600; /* Rendre les liens plus gras */
     padding: 0.5rem 1rem;
-    position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #007bff; /* Bleu vif au survol */
+    color: #007bff; /* Couleur bleue au survol */
+    transform: scale(1.1); /* Légère mise en avant */
 }
 
-.nav-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #007bff; /* Ligne animée au survol */
-    transition: width 0.3s ease-in-out;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.navbar-brand {
+    font-size: 1.75rem; /* Taille plus grande pour le nom */
+    font-weight: bold;
+    margin-right: auto; /* Permet de centrer les liens */
 }
 
-.nav-link:hover::after {
-    width: 60%; /* Animation de la ligne sous le lien */
-}
-
-.navbar-toggler {
-    border: none;
-    outline: none;
-}
 
 .sticky-top {
     position: sticky;
@@ -95,61 +75,45 @@ header p {
     font-weight: 300;
 }
 
-/* Services Section */
+/* Section Services */
 #services {
-    background-image: url('../pictures/A_clean_and_modern_background_image_for_a_Services.png'); /* Mettez le chemin correct ici */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #050505; /* Ajustez la couleur du texte pour la lisibilité */
-    padding: 5rem 0;
+    background-color: #f9f9f9;
+    padding: 3rem 0;
 }
 
 #services h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    color: #333;
 }
 
-#services p {
-    font-size: 1rem;
-    text-align: center;
+#services p.lead {
+    color: #6c757d;
     margin-bottom: 2rem;
-}
-
-/* Tarifs Section */
-#tarifs {
-    padding: 4rem 1rem;
 }
 
 .card {
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
     font-size: 1.5rem;
-    color: #0d6efd;
+    color: #0056b3;
 }
 
 .card-text {
-    margin: 1rem 0;
+    font-size: 1rem;
+    color: #555;
 }
 
-.btn-outline-primary {
-    border-color: #0d6efd;
-    color: #0d6efd;
-}
-
-.btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: #fff;
+.card-img-top {
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #007bff;
 }
 
 /* À propos Section */
