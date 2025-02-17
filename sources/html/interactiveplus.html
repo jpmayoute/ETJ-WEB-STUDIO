@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Interactif Plus</title>
+    <title>site Intéractif+</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +11,14 @@
             padding: 0;
             background-color: #eef;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 1000px;
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -37,9 +41,31 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .header-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
     <div class="container">
         <h1>Service Interactif Plus : Une Expérience Numérique Avancée</h1>
         <p>Pour les entreprises recherchant une solution digitale encore plus performante, notre offre "Service Interactif Plus" vous permet d'intégrer des fonctionnalités avancées.</p>
@@ -51,6 +77,8 @@
             <li>Personnalisation utilisateur</li>
             <li>Optimisation énergétique</li>
         </ul>
+        <img src="../pictures/DALL·E 2025-01-24 11.47.52 - A modern and premium card image representing the 'Site Interactif Plus' offer for a website. The design features a luxurious layout with gradient tone.webp" alt="Image principale" class="header-image">
     </div>
+    <a href="index.html" class="button">Retour vers la page d'accueil</a>
 </body>
 </html>
